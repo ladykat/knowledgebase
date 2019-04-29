@@ -1,0 +1,38 @@
+/*by Kat Usop*/
+
+
+/* Where are the parietal cells located? */ 
+whereCell(parietal_cell, gastric_glands).
+whereGland(gastric_glands, mucosa_stomach).
+
+
+/* Which cells secrete pepsinogen? */ 
+whichCell(secrete_pepsinogen, chief_cells).
+whereCell(chief_cells, gastric_glands).
+
+
+ 
+/* How is food digested? */ 
+
+
+whereFood(swallowed_food, esophagus).
+whereFood(mixed_food, hydrochloric_acid).
+whereFood(mixed_food, pepsin).
+whereFood(mixed_product, stomach).
+
+
+
+
+/*What is esophagus? */
+
+
+whatOrgan(esophagus, GI_tract).
+whatOrgan(GI_tract, between_pharynx_stomach).
+describeOrgan(esophagus, length_25cm).
+
+
+/*Which portion of the esophagus contains striated muscle only. */
+
+whereInEsophagus(striated_muscle, upper_third_esophagus).
+whereInEsophagus(striated_and_smooth_muscle, middle_third_esophagus).
+whereInEsophagus(smooth_muscle, terminal_esophagus).
